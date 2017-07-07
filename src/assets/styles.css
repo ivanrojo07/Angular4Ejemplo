@@ -1,0 +1,19 @@
+.bordeAzul{
+	border: 5px solid lightblue !important;
+}
+.fondoAzul{
+	background: lightblue;
+}
+.fondoVerde{
+	background: lightgreen;
+}
+.fondoAmarillo{
+	background: lightyellow;
+}
+.letraGrande{
+	font-size: 40px;
+}
+.activado{
+	font-weight: bold;
+	background: lightblue;
+}
