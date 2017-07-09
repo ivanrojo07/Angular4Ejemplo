@@ -1,0 +1,29 @@
+<h1>{{titulo}}</h1>
+
+<form #formAuto="ngForm" (ngSubmit)="onSubmit(); formAuto.reset()">
+	<p>
+		<label>Nombre</label>
+		<input type="text" name="nombre" required #nombre="ngModel" [(ngModel)]="auto.nombre">
+		<span *ngIf="nombre.touched && !nombre.valid">El nombre del auto es incorrecto</span>
+	</p>
+	<p>
+		<label>Potencia</label>
+		<input type="text" name="potencia" required #potencia="ngModel" [(ngModel)]="auto.potencia" pattern="[0-9]+">
+		<span *ngIf="potencia.touched && !potencia.valid">La potencia del auto es incorrecta</span>
+	</p>
+	<p>
+		<label>Color</label>
+		<input type="text" name="color" required #color="ngModel" [(ngModel)]="auto.color" pattern="[a-zA-Z#]+">
+		<span *ngIf="color.touched && !color.valid">El color del auto es incorrecto</span>
+	</p>
+	
+	<input type="submit" value="Guardar" [disabled]="!formAuto.form.valid">
+</form>
+<div>
+	<ul *ngFor="let auto of listado_de_autos; let i = index">
+		<li>
+		{{auto.nombre}} | {{auto.potencia}} | {{auto.color}}
+		<button (click)="eliminarAuto(i)">Eliminar Auto</button>
+		</li>
+	</ul>
+</div>

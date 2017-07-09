@@ -5,7 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PersonaComponent } from './persona/persona.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { HomeComponent } from './home/home.component';
-import { ContactoComponent} from './contacto/contacto.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { AutosComponent } from './autos/autos.component';
 
 const appRoutes: Routes=[
 	{path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const appRoutes: Routes=[
 	{path: 'contacto/:page', component: ContactoComponent},
 	{path: 'empleado', component: PersonaComponent},
 	{path: 'fruta', component: FrutaComponent},
+	{path: 'autos', component: AutosComponent},
 	{path: '**', component: PersonaComponent}
 ];
 

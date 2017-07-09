@@ -8,6 +8,9 @@ import { FrutaComponent } from './fruta/fruta.component';
 import { PersonaComponent } from './persona/persona.component';
 import { HomeComponent } from './home/home.component';
 import { ContactoComponent} from './contacto/contacto.component';
+import { AutosComponent} from './autos/autos.component';
+//importar pipe creada
+import { ConversorPipe } from './pipes/conversor.pipe';
 
 
 @NgModule({
@@ -16,7 +19,9 @@ import { ContactoComponent} from './contacto/contacto.component';
     FrutaComponent, 
     PersonaComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
+    AutosComponent,
+    ConversorPipe
   ],
   imports: [
     BrowserModule,

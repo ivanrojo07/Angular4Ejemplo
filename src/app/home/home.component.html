@@ -1,4 +1,8 @@
-<h2>{{titulo}}</h2>
+<h2>{{titulo|uppercase}}</h2>
+<!-- {{fecha|date:'dd/MM/yyyy'}} -->
+{{fecha|date:'fullDate'|lowercase}}
+<hr>
+{{5| conversor:7}}
 <hr>
 <input type="text" [(ngModel)]="prenda_a_guardar">
 <button (click)="guardarPrenda()">Añadir prenda</button>

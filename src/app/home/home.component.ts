@@ -12,9 +12,11 @@ export class HomeComponent{
 	public titulo: string;
 	public listado_ropa: Array<string>;
 	public prenda_a_guardar: string;
+	public fecha;
 	constructor(private _ropaService: RopaService){
 		this.titulo = 'Pagina Principal';
 		this.prenda_a_guardar='';
+		this.fecha = new Date();
 
 	}
 
