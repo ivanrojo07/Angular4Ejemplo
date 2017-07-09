@@ -3,7 +3,7 @@
 <p *ngIf="cargando == true">Cargando</p>
 	<ul *ngFor="let articulo of articulos">
 		<li>
-			<strong>Titulo:</strong> {{articulo.title}}
+			<strong>{{articulo.id}}.-Titulo:</strong> {{articulo.title}}
 			<p>
 				<strong>Articulo:</strong> {{articulo.body}}
 			</p>
