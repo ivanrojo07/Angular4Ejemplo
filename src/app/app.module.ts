@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AutosComponent } from './autos/autos.component';
 import { ArticuloComponent } from './articulo/articulo.component';
+import { PlantillasComponent }from './plantillas/plantillas.component';
 //importar pipe creada
 import { ConversorPipe } from './pipes/conversor.pipe';
 
@@ -24,6 +25,7 @@ import { ConversorPipe } from './pipes/conversor.pipe';
     ContactoComponent,
     AutosComponent,
     ArticuloComponent,
+    PlantillasComponent,
     ConversorPipe
   ],
   imports: [
